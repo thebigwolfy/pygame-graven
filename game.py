@@ -9,10 +9,7 @@ class Game:
 
     def __init__(self):
         # Démarrage
-        self.running = {
-            "clock": True,
-            "menu": False
-        }
+        self.running = True,
         self.map = "world"
 
         # Affichage de la fenêtre
