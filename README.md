@@ -1,6 +1,7 @@
 # ATTENTION
 
 Vous ne devez pas **copier coller** le code sans le comprendre, apprennez déjà, le python et pygame, et seulement ensuite, vous pourrrez l'utiliser à vos soins !
+
 N'hésitez pas à mettre des suggestions de modifications :)
 
 
@@ -17,6 +18,6 @@ Effectivement, si de nouvelle vidéo de ce type sort sur sa chaîne, je me ferai
 
 N'hésitez pas à mettre une étoile, cela me montrera que vous aimez ce partage de code.
 
-## Lien de la vidéo
+### Lien de la vidéo
 
 Lien de sa vidéo : https://youtu.be/ooITOxbYVTo
