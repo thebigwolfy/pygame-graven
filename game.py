@@ -9,7 +9,7 @@ class Game:
 
     def __init__(self):
         # Démarrage
-        self.running = True,
+        self.running = True
         self.map = "world"
 
         # Affichage de la fenêtre
@@ -25,6 +25,9 @@ class Game:
         # Générer le joeur
         player_position = tmx_data.get_object_by_name("player")
         self.player = Player(player_position.x - 15, player_position.y - 15)
+
+        # Définir le logo du jeu
+        pygame.display.set_icon(self.player.get())
 
         # Les collisions
         self.walls = []

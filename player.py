@@ -20,6 +20,11 @@ class Player(pygame.sprite.Sprite):
         self.old_position = self.position.copy()
         self.speed = 3
 
+    def get(self):
+        self.image = self.images["down"]
+        self.image.set_colorkey([0, 0, 0])
+        return self.image
+
     def save_location(self): self.old_position = self.position.copy()
 
     def move_player(self, type):
