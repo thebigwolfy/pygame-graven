@@ -24,7 +24,7 @@ class Game:
 
         # Générer le joeur
         player_position = tmx_data.get_object_by_name("player")
-        self.player = Player(player_position.x - 15, player_position.y - 15)
+        self.player = Player(player_position.x, player_position.y)
 
         # Définir le logo du jeu
         pygame.display.set_icon(self.player.get())
