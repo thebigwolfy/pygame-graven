@@ -59,6 +59,8 @@ class Game:
             self.player.move_player("left")
 
     def switch_house(self):
+self.map = "house"
+
         # Charger la carte clasique
         tmx_data = pytmx.util_pygame.load_pygame("house.tmx")
         map_data = pyscroll.data.TiledMapData(tmx_data)
@@ -86,6 +88,8 @@ class Game:
         self.player.position[1] = spawn_house_point.y - 20
 
     def switch_world(self):
+self.map = "world"
+
         # Charger la carte clasique
         tmx_data = pytmx.util_pygame.load_pygame("carte.tmx")
         map_data = pyscroll.data.TiledMapData(tmx_data)
@@ -118,12 +122,10 @@ class Game:
         # Vérifier l'entrer de la maison
         if self.map == "world" and self.player.feet.colliderect(self.enter_house_rect):
             self.switch_house()
-            self.map = "house"
 
         if self.map == "house" and self.player.feet.colliderect(self.enter_house_rect):
             self.switch_world()
-            self.map = "world"
-
+           
         # Vérification des collisions
         for sprite in self.group.sprites():
             if sprite.feet.collidelist(self.walls) > -1:
