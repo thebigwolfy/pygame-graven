@@ -141,7 +141,7 @@ self.map = "world"
             self.player.save_location()
             self.handle_input()
             self.update()
-            self.group.center(self.player.rect)
+            self.group.center(self.player.rect.center)
             self.group.draw(self.screen)
             pygame.display.flip()
 
