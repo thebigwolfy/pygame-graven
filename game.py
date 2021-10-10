@@ -59,7 +59,7 @@ class Game:
             self.player.move_player("left")
 
     def switch_house(self):
-self.map = "house"
+        self.map = "house"
 
         # Charger la carte clasique
         tmx_data = pytmx.util_pygame.load_pygame("house.tmx")
@@ -88,7 +88,7 @@ self.map = "house"
         self.player.position[1] = spawn_house_point.y - 20
 
     def switch_world(self):
-self.map = "world"
+        self.map = "world"
 
         # Charger la carte clasique
         tmx_data = pytmx.util_pygame.load_pygame("carte.tmx")
@@ -132,7 +132,6 @@ self.map = "world"
                 sprite.move_back()
 
     def run(self):
-
         clock = pygame.time.Clock()
 
         # Clock
